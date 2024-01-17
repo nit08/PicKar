@@ -57,7 +57,9 @@ export default function SearchResults() {
           }}
         >
           {options.map((o) => (
-            <div className={styles.options}>{o}</div>
+            <div key={o} className={styles.options}>
+              {o}
+            </div>
           ))}
         </div>
         <div
@@ -91,7 +93,12 @@ export default function SearchResults() {
                 >
                   {tags.map((t) => (
                     <div
-                      style={{ backgroundColor: "#F5F5F5", padding: "10px",cursor:"pointer" }}
+                      key={t}
+                      style={{
+                        backgroundColor: "#F5F5F5",
+                        padding: "10px",
+                        cursor: "pointer",
+                      }}
                     >
                       {t}
                     </div>
