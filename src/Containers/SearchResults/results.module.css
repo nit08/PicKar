@@ -1,0 +1,28 @@
+.text {
+  color: #fff;
+  text-align: center;
+  text-shadow: 0px 3.551px 3.551px rgba(0, 0, 0, 0.25);
+  /* font-family: Euclid Circular B; */
+  font-size: 42.614px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 87.359px; /* 205% */
+  margin: 30px 0px;
+}
+.resultsCont {
+  background-color: #fff;
+}
+.options {
+  border-radius: 4px;
+  border: 1px solid #d1d1d1;
+  padding: 15px 65px;
+  cursor: pointer;
+}
+.card {
+  padding: 10px;
+  border-radius: 10px;
+}
+.card:hover {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+    rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}

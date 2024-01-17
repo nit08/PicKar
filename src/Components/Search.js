@@ -3,7 +3,7 @@ import classes from "./search.module.css";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 
-export default function Search() {
+export default function Search({ value }) {
   const router = useRouter();
   const [input, setInput] = useState();
   const handleSearch = (e) => {
@@ -36,6 +36,7 @@ export default function Search() {
           <div style={{ borderLeft: "2px solid #fff", height: "30px" }}></div>
           <input
             value={input}
+            defaultValue={value}
             onChange={(e) => {
               setInput(e.target.value);
             }}
