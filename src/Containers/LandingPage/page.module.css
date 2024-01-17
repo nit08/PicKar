@@ -1,0 +1,21 @@
+.heading {
+  color: #fff;
+  text-align: center;
+  text-shadow: 0px 3.559px 3.559px rgba(0, 0, 0, 0.25);
+  /* font-family: Euclid Circular B; */
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 87.541px; /* 123% */
+  /* z-index: 523; */
+  max-width: 900px;
+}
+.pageCont {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  align-items: center;
+  padding: 60px;
+}
