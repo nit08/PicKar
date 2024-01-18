@@ -3,6 +3,19 @@
   padding: 0;
   margin: 0;
 }
+*::-webkit-scrollbar {
+  width: 15px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #b5b5b500;
+  width: 5px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: #748a8d41;
+  width: 5px;
+}
 
 html,
 body {
@@ -10,6 +23,10 @@ body {
   overflow-x: hidden;
   position: relative;
   height: 100vh;
+}
+
+body.modal-open {
+  overflow: hidden;
 }
 
 a {
@@ -26,7 +43,7 @@ a {
   padding: 15px;
   padding-inline: 30px;
   color: #fff;
-  /* font-family: "Euclid Circular B"; */
+  font-family: "Euclid Circular B";
   font-size: 17.813px;
   font-style: normal;
   font-weight: 500;
