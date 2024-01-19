@@ -17,21 +17,22 @@ export default function Search({ value }) {
         justifyContent: "center",
         alignItems: "center",
         flexDirection: "column",
-        gap: "20px",
+        // gap: "20px",
       }}
     >
       <form
         onSubmit={handleSearch}
         className="fieldCont"
         style={{
-          width: "700px",
-          minWidth: "280px",
+          maxWidth: "700px",
+          width: "70%",
+          minWidth: "350px",
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
         }}
       >
-        <div style={{ display: "flex", gap: "20px" }}>
+        <div style={{ display: "flex", gap: "20px", width: "100%" }}>
           <Image src={"/search.svg"} alt="Search" width={30} height={30} />
           <div style={{ borderLeft: "2px solid #fff", height: "30px" }}></div>
           <input

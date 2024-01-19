@@ -54,7 +54,7 @@ export default function SearchResults() {
               overflowY: "auto",
               display: "flex",
               gap: "15px",
-              padding: "30px 40px",
+              padding: "25px 40px",
             }}
           >
             {options.map((o) => (

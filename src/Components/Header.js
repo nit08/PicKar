@@ -2,11 +2,19 @@ import React from "react";
 
 export default function Header() {
   return (
-    <div style={{ padding: "50px" }}>
+    <div
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        padding: "50px 10px",
+      }}
+    >
       <header
         className="fieldCont"
         style={{
           width: "100%",
+          maxWidth: "1200px",
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
