@@ -36,8 +36,8 @@ export default function LoginForm({ onClose }) {
           </svg> */}
       </div>
       <form action="" className={styles.logIn} autoComplete="off">
-        <h4>Hello, </h4>
-        <p>Welcome back! Log in to your account to view today's clients:</p>
+        <h4>Welcome back! </h4>
+        <p>Log in to your account.</p>
         <div className={styles.floatingLabel}>
           <input
             placeholder="Email"

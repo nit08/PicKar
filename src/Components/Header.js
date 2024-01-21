@@ -42,7 +42,7 @@ export default function Header() {
             <div className="buttonSec" onClick={() => setlogin(true)}>
               Login
             </div>
-            <button>Create Account</button>
+            <button onClick={() => setlogin(true)}>Create Account</button>
           </div>
         </header>
       </div>
