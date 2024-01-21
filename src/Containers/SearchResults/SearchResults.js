@@ -1,6 +1,6 @@
 "use client";
 
-import { useSearchParams } from "next/navigation";
+import { useParams, useSearchParams } from "next/navigation";
 import React, { useState } from "react";
 import styles from "./results.module.css";
 import Search from "@/Components/Search";
@@ -12,14 +12,15 @@ export default function SearchResults({ data, searchOptions }) {
   const [open, setOpen] = useState(false);
   const [modalData, setModalData] = useState();
   const [search, setSearch] = useState();
-  const params = useSearchParams();
-  const searchTerm = params.get("term");
+  const params = useParams();
+  const searchTerm = params.term;
+
   console.log(data);
   return (
     <>
       <div>
         <div style={{ marginTop: "30px" }}>
-          <Search value={searchTerm} />
+          <Search value={searchTerm} search={search} />
         </div>
         <div className={styles.text}>Results: {searchTerm}</div>
         <div className={styles.resultsCont}>

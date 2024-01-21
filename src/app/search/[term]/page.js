@@ -2,9 +2,9 @@ import SearchResults from "@/Containers/SearchResults/SearchResults";
 import { Get } from "@/lib/apiCalls";
 import React from "react";
 
-export default async function page({ searchParams }) {
+export default async function page({ params }) {
   const data = await Get(
-    `https://pixabay.com/api/?q=${searchParams.term}`,
+    `https://pixabay.com/api/?q=${params.term}`,
     true
   );
   let tags = [];

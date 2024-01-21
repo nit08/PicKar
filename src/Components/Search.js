@@ -8,7 +8,7 @@ export default function Search({ value }) {
   const [input, setInput] = useState();
   const handleSearch = (e) => {
     e.preventDefault();
-    router.push(`/search/?term=${input}`);
+    router.push(`/search/${input}`);
   };
   return (
     <div
