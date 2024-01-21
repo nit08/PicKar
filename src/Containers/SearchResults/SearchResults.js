@@ -45,6 +45,23 @@ export default function SearchResults({ data, searchOptions }) {
               </div>
             ))}
           </div>
+
+          {(data.totalHits === 0 || data.total === 0) && (
+            <div
+              style={{
+                width: "100%",
+                height: "500px",
+                padding: "40px",
+                display: "flex",
+                gap: "30px",
+                flexWrap: "wrap",
+                justifyContent: "center",
+              }}
+            >
+              {" "}
+              No Results Found!
+            </div>
+          )}
           <div
             style={{
               width: "100%",
@@ -194,7 +211,7 @@ export default function SearchResults({ data, searchOptions }) {
                 { title: "Downloads", value: modalData?.downloads },
                 { title: "Likes", value: modalData?.likes },
               ].map((inf, i) => (
-                <div style={{ width: "80px" }}>
+                <div style={{ width: "80px" }} key={i}>
                   <div className={styles.infoTitle}>{inf.title}</div>
                   <div className={styles.info}>{inf.value}</div>
                 </div>
