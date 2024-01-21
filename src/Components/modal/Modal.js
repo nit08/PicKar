@@ -1,10 +1,15 @@
 import React from "react";
 import ReactModal from "react-modal";
-import styles from "./modal.module.css"
+import styles from "./modal.module.css";
 import Image from "next/image";
 export default function Modal({ children, open, onClose, title, closeButton }) {
   return (
-    <ReactModal isOpen={open} onRequestClose={onClose} style={modalStyles}>
+    <ReactModal
+      isOpen={open}
+      onRequestClose={onClose}
+      style={modalStyles}
+      ariaHideApp={false}
+    >
       <div className={styles.modalHeading}>
         {title}
         {closeButton && (

@@ -23,6 +23,7 @@ body {
   overflow-x: hidden;
   position: relative;
   height: 100vh;
+  font-family: "Euclid Circular B";
 }
 
 body.modal-open {
