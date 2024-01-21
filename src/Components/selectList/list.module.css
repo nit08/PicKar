@@ -3,10 +3,15 @@
   display: block;
   position: relative;
 }
-.label {
-  padding: 12px 30px;
+.inputGroup:hover {
+  background-color: #f5f5f5;
+}
+.inputGroup label {
+  padding: 10px 30px;
   width: 100%;
-  display: block;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 70px;
   text-align: left;
   color: #3c454c;
   cursor: pointer;
@@ -15,12 +20,11 @@
   transition: color 200ms ease-in;
   overflow: hidden;
 }
-.label:before {
+.inputGroup label:before {
   width: 5px;
   height: 5px;
   border-radius: 50%;
   content: "";
-  background-color: #f5f5f5;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -30,15 +34,16 @@
   z-index: -1;
 }
 
-.label:after {
-  width: 32px;
-  height: 32px;
+.inputGroup label:after {
+  width: 18px;
+  height: 18px;
   content: "";
   border: 2px solid #d1d7dc;
   background-color: #fff;
-  background-image: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.414 11L4 12.414l5.414 5.414L20.828 6.414 19.414 5l-10 10z' fill='%23fff' fill-rule='nonzero'/%3E%3C/svg%3E ");
-  background-repeat: no-repeat;
-  background-position: 2px 3px;
+  background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMTUiIGhlaWdodD0iMTUiIHZpZXdCb3g9IjAgMCA0OCA0OCIKc3R5bGU9ImZpbGw6I0ZGRkZGRjsiPgo8cGF0aCBkPSJNIDQzLjQ3MDcwMyA4Ljk4NjMyODEgQSAxLjUwMDE1IDEuNTAwMTUgMCAwIDAgNDIuNDM5NDUzIDkuNDM5NDUzMSBMIDE2LjUgMzUuMzc4OTA2IEwgNS41NjA1NDY5IDI0LjQzOTQ1MyBBIDEuNTAwMTUgMS41MDAxNSAwIDEgMCAzLjQzOTQ1MzEgMjYuNTYwNTQ3IEwgMTUuNDM5NDUzIDM4LjU2MDU0NyBBIDEuNTAwMTUgMS41MDAxNSAwIDAgMCAxNy41NjA1NDcgMzguNTYwNTQ3IEwgNDQuNTYwNTQ3IDExLjU2MDU0NyBBIDEuNTAwMTUgMS41MDAxNSAwIDAgMCA0My40NzA3MDMgOC45ODYzMjgxIHoiPjwvcGF0aD4KPC9zdmc+")
+    50% 50% no-repeat;
+  background-size: 90%;
+  background-position: 1px 1.5px;
   border-radius: 50%;
   z-index: 2;
   position: absolute;
@@ -49,22 +54,19 @@
   transition: all 200ms ease-in;
 }
 
-.inputGroup input:checked ~ .label {
-  color: #fff;
-}
-.inputGroup input:checked ~ .label:before {
+.inputGroup input:checked ~ input {
   transform: translate(-50%, -50%) scale3d(56, 56, 1);
   opacity: 1;
 }
 
-.inputGroup input:checked ~ .label:after {
+.inputGroup input:checked ~ label:after {
   background-color: #54e0c7;
   border-color: #54e0c7;
 }
 
 .inputGroup input {
-  width: 32px;
-  height: 32px;
+  width: 25px;
+  height: 25px;
   order: 1;
   z-index: 2;
   position: absolute;
