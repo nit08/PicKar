@@ -1,6 +1,10 @@
+"use client";
+
+import { useRouter } from "next/navigation";
 import React from "react";
 
 export default function Header() {
+  const router = useRouter();
   return (
     <div
       style={{
@@ -20,7 +24,9 @@ export default function Header() {
           alignItems: "center",
         }}
       >
-        <div>Homepage</div>
+        <div className="buttonSec" onClick={() => router.push("/")}>
+          Homepage
+        </div>
         <div
           style={{
             display: "flex",

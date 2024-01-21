@@ -79,7 +79,7 @@ button:hover {
   transition: all 0.2s ease-in-out;
 
   color: #fff;
-
+  cursor: pointer;
   font-size: 17.813px;
   font-style: normal;
   font-weight: 500;
