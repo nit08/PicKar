@@ -18,6 +18,7 @@ export default function Search({ value }) {
         alignItems: "center",
         flexDirection: "column",
         // gap: "20px",
+        width: "100%",
       }}
     >
       <form
@@ -36,7 +37,7 @@ export default function Search({ value }) {
           <Image src={"/search.svg"} alt="Search" width={30} height={30} />
           <div style={{ borderLeft: "2px solid #fff", height: "30px" }}></div>
           <input
-            value={input}
+            // value={input}
             defaultValue={value}
             onChange={(e) => {
               setInput(e.target.value);
