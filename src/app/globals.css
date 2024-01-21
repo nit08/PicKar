@@ -88,3 +88,14 @@ button:hover {
 .buttonSec:hover {
   background-color: rgba(243, 238, 238, 0.141);
 }
+
+.st01 {
+  fill: #fff;
+}
+.st0 {
+  fill: none;
+}
+
+.st1 {
+  fill: #010101;
+}
